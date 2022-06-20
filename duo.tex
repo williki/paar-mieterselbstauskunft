@@ -1,0 +1,54 @@
+% !TeX spellcheck = de_DE
+
+\documentclass{report}
+\usepackage{etoolbox}
+
+\usepackage{dokumentvorlage}
+
+\begin{document}
+\input{vars}
+\begin{center}
+  \Huge \textbf{Mieterselbstauskunft}
+  \vspace{1.5em}
+\end{center}
+
+
+\begin{tabularx}{\linewidth}{p{4.7cm} p{5cm} p{5cm}} 
+  & \includegraphics[width=3cm]{img/PersonA} & \includegraphics[width=3cm]{img/PersonB} 
+  \\
+  & \textbf{\NameA} & \textbf{\NameB} \\
+  \hline
+   \textbf{Geburtsdatum}            & \BirthdayA       & \BirthdayB	\\ \hline
+ \textbf{Handy-Nummer}            & \TelephoneA      & \TelephoneB	\\ \hline
+ \textbf{E-Mail Adresse}          & \MailA  					& \MailB 			\\ \hline
+ \textbf{Aktuelle Anschrift}      & \AddressA				& \AddressB		\\ \hline
+ \textbf{Derzeitiger Vermieter} 	 & \LandlordA   		& \LandlordB 	\\ 
+ \hline\hline
+ \textbf{Arbeitgeber} 						 & \EmployerA		 		& \EmployerB  \\ \hline
+ \textbf{Ausgeübter Beruf}        & \JobA   					& \JobB  			\\ \hline
+ \textbf{Mtl. Nettoeinkommen}     & \SalaryA   			& \SalaryB  	\\ \hline
+ \textbf{Arbeitsverhältnis seit}  & \JobSinceA 			& \JobSinceB  \\ \hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\linewidth}{p{15.5cm} r}
+  Bestehen Mietrückstände aus vorherigen Mietverhältnissen? & Nein\\
+  Wurden in den letzten 5 Jahren Räumungsklagen gegen Sie erhoben? & Nein\\
+  Wurden Zwangsvollstreckungen im Zusammenhang mit Mietverhältnissen gegen Sie 
+  eingeleitet? & Nein\\
+  Haben Sie in den letzten 5 Jahren eine eidesstattliche Versicherung abgegeben? & Nein\\
+  Wurde in den letzten 5 Jahren ein Insolvenzverfahren gegen Sie eingeleitet? & Nein\\
+  Haben Sie Vorstrafen oder lag ein Haftbefehl im Rahmen eines Mietverhältnisses gegen Sie vor? & Nein\\
+  Beziehen Sie Sozialleistungen zur Zahlung der Miete und/oder Kaution? & Nein\\
+  Beabsichtigen Sie das Objekt gewerblich zu nutzen? & Nein
+\end{tabularx}
+
+% :: Unteschrift
+\vspace{8em}
+
+\hfill\parbox{4cm}{\hrule \strut \centering\footnotesize Ort, Datum}
+\hfill\parbox{4cm}{\hrule \strut \centering\footnotesize \NameA}
+\hfill\parbox{4cm}{\hrule \strut \centering\footnotesize \NameB}
+
+\end{document}

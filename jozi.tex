@@ -1,0 +1,83 @@
+% !TeX spellcheck = de_DE
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,a4paper]{article}
+
+%\usepackage[T1]{fontenc} 		% das Trennen der Umlaute
+\usepackage[ngerman]{babel} % hiermit werden deutsche Bezeichnungen genutzt und die Wörter werden 
+                            % anhand der neue Rechtschreibung automatisch getrennt.
+\usepackage[locale = DE, detect-all]{siunitx} % Zur Darstellung von Zahlen in den Tabellen
+\usepackage[ngerman]{datetime2}  % Formatdate
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{theorem}
+\usepackage{tabularx}
+\usepackage{eurosym}
+\usepackage{longtable}
+\renewcommand{\baselinestretch}{1.1}
+
+\definecolor{dunkelblau}{rgb}{0,0.4,0.6}
+
+\setlength{\textwidth}{15.5cm}
+\setlength{\textheight}{26.5cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\topmargin}{-1.8cm}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+\input{vars}
+
+\begin{center}
+  \begin{LARGE}
+    \textbf{\textcolor{dunkelblau}{Mieterselbstauskunft}}\\
+    \vspace{0,3cm}
+  \end{LARGE}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{img/Couple}
+  \end{figure}
+\end{center}
+
+Die nachfolgenden Informationen teilen wir dem Vermieter auf Grundlage einer freiwilligen 
+Selbstauskunft im Rahmen des Anmietungswunsches mit.\vspace{0.5cm}
+
+\begin{tabularx}{\linewidth}{p{5.5cm} p{5cm} p{5cm}}
+  &\textbf{\textcolor{dunkelblau}{\NameB}} & \textbf{\textcolor{dunkelblau}{\NameA}}\vspace{0.5cm}\\
+  \textcolor{dunkelblau}{Geburtsdatum} 				& \BirthdayB 	& \BirthdayA \\
+  \textcolor{dunkelblau}{Aktuelle Anschrift} 	& \AddressB 	& \AddressA \\
+  \textcolor{dunkelblau}{Aktuelle Vermieter} 	& \LandlordB 	& \LandlordA \\
+  \textcolor{dunkelblau}{Telefon} 						& \TelephoneB & \TelephoneA \\
+  \textcolor{dunkelblau}{E-Mail} 							& \MailB			& \MailA \\
+  \textcolor{dunkelblau}{Ausgeübter Beruf} 		& \JobB 			& \JobA \\
+  \textcolor{dunkelblau}{Arbeitgeber} 				& \EmployerJobSinceB & \EmployerJobSinceA \\
+  \textcolor{dunkelblau}{Monatliches Nettoeinkommen} & \SalaryB & \SalaryA \\
+  \textcolor{dunkelblau}{Raucher}							& \SmokerB 		& \SmokerB \\
+\end{tabularx}
+\vspace{0.8cm}
+
+
+%\textbf{\textcolor{dunkelblau}{Weitere Informationen}}\vspace{0.5cm}\\
+\begin{tabular}{p{13,5cm}l}
+  Bestehen Mietrückstände aus vorherigen Mietverhältnissen?& Nein\vspace{0,2cm}\\
+  Wurden in den letzten 5 Jahren Räumungsklagen gegen Sie erhoben?&Nein\vspace{0,2cm}\\
+  Wurden in den letzten 5 Jahren Zwangsvollstreckungen im Zusammenhang mit Mietverhältnissen gegen Sie 
+  eingeleitet?&Nein\vspace{0,2cm}\\
+  Haben Sie in den letzten 5 Jahren eine eidesstattliche Versicherung abgegeben?&Nein\vspace{0,2cm}\\
+  Wurde in den letzten 5 Jahren ein Insolvenzverfahren gegen Sie eingeleitet?&Nein\vspace{0,2cm}\\
+  Haben Sie Vorstrafen oder lag in den letzten 5 Jahren ein Haftbefehl im Rahmen eines 
+  Mietverhältnisses gegen Sie vor?&Nein\vspace{0,2cm}\\
+  Beziehen Sie Sozialleistungen zur Zahlung der Miete und/oder Kaution?&Nein\vspace{0,2cm}\\
+  Beabsichtigen Sie das Objekt gewerblich zu nutzen?&Nein
+\end{tabular}
+\vspace{0,8cm}
+
+Wir erklären, dass sämtliche vorgenannten Angaben wahrheitsgemäß von uns getätigt wurden.\vspace{2,5cm}
+
+\begin{tabularx}{\linewidth}{p{5,5cm} p{5cm} p{5cm}}
+  Ort, Datum & (\NameB) & (\NameA)
+\end{tabularx}
+
+\end{document}

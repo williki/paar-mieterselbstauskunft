@@ -1,0 +1,77 @@
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+%\usepackage[latin1]{inputenc}	% ermöglich die direkte Eingabe der Umlaute - nicht bei XeLaTex/LuaLaTex
+%\usepackage[T1]{fontenc} 		% das Trennen der Umlaute
+
+\usepackage[ngerman]{babel} % hiermit werden deutsche Bezeichnungen genutzt und die Wörter werden 
+%anhand der neue Rechtschreibung automatisch getrennt.
+\usepackage[locale = DE, detect-all]{siunitx} % Zur Darstellung von Zahlen in den Tabellen
+\usepackage[ngerman]{datetime2}  % Formatdate
+
+% \usepackage[nomessages]{fp}
+\usepackage{booktabs}			% Für schönere Tabellen
+\usepackage{caption}			% Erweiteret Einstellungen für caption
+\usepackage{colortbl}			% Farbe für Tabellenzeilen
+\usepackage{float}				% Erweiterte Einstellungen für float
+\usepackage{microtype} 			% Minimale Anpassungen um typographische Perfektion zu erreichen
+\usepackage[no-math]{fontspec} 	% Mathdollar Fehler behebung
+\usepackage{nopageno}			% Keine automatischen Seitezahlen bei pagestyle plain
+\usepackage{numprint}			% Korrekte Anzeige von Einheiten/Nummern mit Einrückung
+\usepackage{relsize}			% Relative Größenänderung
+\usepackage[sfdefault,light]{noto} % Use noto light font
+\usepackage{tabto}				% Tabbe zur exakten position Genutzt beim Scope
+\usepackage{tabu}				% Zum Färben von Tabellen
+\usepackage{titlesec}			% Fürs spacing der Überschrift
+\usepackage{tabularx}			% Tabelle mit dynamischer Gesamtbreite
+\usepackage[many]{tcolorbox} % Almighty tcolorbox!
+\usepackage{multicol}			% Distribute across columns
+
+
+\usepackage{enumitem}
+\newlist{todolist}{itemize}{2}
+
+% Größen von Zeilenabstand, Checkboxen und Textfeldern
+
+\renewcommand{\baselinestretch}{1.4}
+
+\def\DefaultHeightofCheckBox{0.33cm}
+\def\DefaultWidthofCheckBox{0.33cm}
+
+\def\DefaultHeightofChoiceMenu{0.3cm}
+\def\DefaultWidthofChoiceMenu{0.3cm}
+
+\def\DefaultHeightofText{1\baselineskip}
+\def\DefaultHeightofTextMultiline{4\baselineskip}
+\def\DefaultWidthofText{15.25cm}
+
+
+% Style option
+\setlength{\parindent}{0em} 	% Einrücken verhindern
+
+
+% Liste
+\setlist[itemize]{leftmargin=1cm, rightmargin=2.5cm, labelsep=0.5cm, topsep=1.5em}
+\renewcommand\labelitemi{\scriptsize$\blacksquare$}
+
+% Patch in noto sans regular to use instead of textbf on noto sans light
+\newfontfamily\notoreg{noto-sans}
+
+
+% Define space between chapter for section and chapter
+\titleformat{\chapter}{\LARGE\bfseries}{\chaptername\ \thechapter}{0pt}{\vskip 20pt\raggedright}%
+\titlespacing{\chapter}{0pt}{-30pt}{0pt}%
+
+\titleformat{\section}{\LARGE\bfseries}{\chaptername\ \thechapter}{0pt}{\vskip 20pt\raggedright}%
+\titlespacing{\section}{0pt}{0pt}{20pt}%
+
+% Layout Tabelle
+\renewcommand{\arraystretch}{1.4} 	% Abstand Zeilen
+
+
+% Tcolorbox
+%\tcbset{enhanced, drop fuzzy shadow, colback=white,colframe=black, fonttitle=\bfseries,left=1mm, 
+%  right=1mm,top=1mm, bottom=1mm}
+
+\usepackage{wrapfig}
+
+\NewDocumentCommand{\shadowpic}{mm}{\tcbincludegraphics[#1, colframe=black, colback=white, 
+  size=tight, boxrule=0.2mm, arc=1mm, auto outer arc, drop fuzzy shadow]{#2}}
