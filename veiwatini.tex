@@ -1,0 +1,73 @@
+% !TeX spellcheck = de_DE
+\documentclass[11pt,a4paper]{article}
+
+%\usepackage[T1]{fontenc} 		% das Trennen der Umlaute
+\usepackage[ngerman]{babel} % hiermit werden deutsche Bezeichnungen genutzt und die Wörter werden
+                            % anhand der neue Rechtschreibung automatisch getrennt.
+\usepackage[locale = DE, detect-all]{siunitx} % Zur Darstellung von Zahlen in den Tabellen
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{theorem}
+\usepackage{tabularx}
+\usepackage{eurosym}
+\usepackage{etoolbox}
+
+\renewcommand{\baselinestretch}{1.1}
+
+\definecolor{dunkelblau}{rgb}{0,0.4,0.6}
+\setlength{\textwidth}{15.5cm}
+\setlength{\textheight}{26.5cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\topmargin}{-1.8cm}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+\input{vars}
+
+\begin{center}
+  \huge\textbf{\textcolor{dunkelblau}{Mieterselbstauskunft}}\\
+  \vspace{0,3cm}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{img/Couple_round}
+  \end{figure}
+\end{center}
+
+Die nachfolgenden Informationen teilen wir dem Vermieter auf Grundlage einer freiwilligen
+Selbstauskunft im Rahmen des Anmietungswunsches mit.\vspace{0,5cm}
+
+
+\begin{tabularx}{\linewidth}{p{5,5cm} p{5cm} p{5cm}}
+  &\large\textbf{\textcolor{dunkelblau}{\NameA}}&\large\textbf{\textcolor{dunkelblau}{\NameB}}\vspace{0.5cm}\\
+  \textcolor{dunkelblau}{Geburtsdatum} &\BirthdayA&\BirthdayB\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{Aktuelle Anschrift} &\AddressA&\AddressB\\
+  \textcolor{dunkelblau}{Aktuelle Vermieter} & \LandlordA &\LandlordB\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{Telefon} &\TelephoneA&\TelephoneB\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{E-Mail} &\MailA&\MailB\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{Ausgeübter Beruf} &\JobA&\JobB\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{Arbeitgeber} & \EmployerA & \EmployerB\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{Monatliches Nettoeinkommen} &\SalaryA\euro{}&\SalaryB\euro{}\vspace{0.2cm}\\
+  \textcolor{dunkelblau}{Raucher}&Nein&Nein
+\end{tabularx}
+\vspace{0.8cm}
+
+
+\textbf{\textcolor{dunkelblau}{Erklärungen}}\vspace{0.5cm}\\
+Bei uns bestehen keine Mietrückstände aus vorherigen Mietverhältnissen und wir beziehen keine
+Sozialleistungen zur Zahlung von Miete oder Kaution.\\
+Auch wurden gegen keinen von uns in den letzten 5 Jahren Räumungsklagen erhoben, Zwangsvollstreckungen
+oder Insolvenzverfahren eingeleitet und es lag auch kein Haftbefehl im Rahmen eines Mietverhältnisses
+gegen uns vor.\\
+Wir haben in den letzten 5 Jahren keine eidesstattliche Versicherung abgegeben und wir beabsichtigen
+das Objekt nicht gewerblich zu nutzen.
+\vspace{0,8cm}
+
+
+Wir erklären, dass sämtliche obige Angaben wahrheitsgemäß von uns getätigt wurden.\vspace{3cm}
+
+\begin{tabularx}{\linewidth}{p{5,5cm} p{5cm} p{5cm}}
+  Ort, Datum&\NameA&\NameB
+\end{tabularx}
+
+\end{document}
