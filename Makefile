@@ -2,9 +2,9 @@ LAT=latexmk -e '$$lualatex=q/lualatex %O -synctex=1 -interaction=nonstopmode %S/
 PDFVIEWER=xdg-open
 ZIP=zip Mieterauskunft-$(shell date +%F).zip
 
-.PHONY: all zip clean duo jozi pares veiwatini.tex
+.PHONY: all zip clean duo jozi pares veiwatini
 
-all: duo jozi pares
+all: duo jozi pares veiwatini
 
 duo:
 	$(LAT) duo.tex
@@ -15,8 +15,8 @@ jozi:
 pares:
 	$(LAT) pares.tex
 
-#veiwatini:
-#	$(LAT) veiwatini.tex
+veiwatini:
+	$(LAT) veiwatini.tex
 
 zip: all
 	$(ZIP) *.pdf

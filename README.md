@@ -6,5 +6,18 @@ Persönliche Daten in vars.tex eintragen. Bilder in img/ ablegen.
 
 ## Build
 `make $TYP`
-oder einfach `make all` um alle zu bauen.
+oder einfach `make` um alle zu bauen.
 
+## Beispiele
+
+### Duo
+![duo](/examples/duo.pdf.png)
+
+### Jozi
+![jozi](/examples/jozi.pdf.png)
+
+### Pares
+![pares](/examples/pares.pdf.png)
+
+### Veiwatini
+![veiwatini](/examples/veiwatini.pdf.png)
